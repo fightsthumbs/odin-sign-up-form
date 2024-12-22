@@ -1,0 +1,187 @@
+body,
+div {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+html {
+    height: 100%;
+  }
+
+
+body {
+    position: relative;
+    display: block;
+    margin: 0px;
+    height: 100%;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(./fonts/Norse-Bold.woff) format('woff');
+  }
+  
+
+
+#content {
+display: flex;
+
+height: 100%;
+
+}
+
+#section_left {
+
+    background-color: antiquewhite;
+    
+
+
+
+    background-image: url(./img/background_eo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-x: 50%;
+    position: relative;
+
+
+}
+
+#section_right {
+
+    background: #F9FAFB;
+   /*  padding-left: 40px;
+    padding-right: 160px; */
+    align-self: stretch;
+    
+}
+
+button {
+     background-color: #c5513d;
+     color: azure;
+     font-weight: bold;
+     width: 200px;
+     height: 40px;
+     border-radius: 10px;
+     border: none;
+     margin: 30px 40px;
+}
+
+.credit-section {
+        /* display: inline-block; */
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+justify-content: center;
+width: 100%;
+    margin:auto;
+}
+
+.credit-section > p {
+    font-size: 12px;
+}
+
+#credit-img {
+color: #F9FAFB;
+text-align: center;
+
+}
+
+#sign-up-section {
+    padding-left: 40px;
+}
+
+
+.logo-heading {
+    background-color: rgba(5, 5, 5, 0.158);
+    display: flex;
+    align-items: center;
+    padding: 10px 140px;
+    margin-top: 50%;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.logo-heading > h2 {
+    color: #F9FAFB;
+    font-family: "Norse-Bold";
+    font-size: 60px;
+}
+
+.form_section {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 40px ;
+    box-shadow: 0px 6px 5px #00000036;
+}
+
+.form-box {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-right: 160px;
+    
+}
+
+
+
+
+
+.img-logo {
+    width: 90px;
+}
+
+.heading-text {
+    margin-top: 130px;
+    margin-left: 50px;
+    margin-right: 165px;
+}
+
+label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #2A3441;
+}
+
+input {
+    max-width: 230px;
+    border-radius: 5px;
+    height: 26px;
+}
+
+input, label {
+    display:block;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+.label_input {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+input:focus,
+input:focus-visible {
+    border-color: rgb(0, 202, 158);
+}
+
+input:valid {
+    border-color: green;
+}
+
+
+
+button:hover {
+    cursor:pointer;
+    box-shadow: 2px 2px 7px 0px #0007;
+}
